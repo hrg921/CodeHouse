@@ -1,0 +1,4 @@
+CREATE TABLE `users` ( `id` int NOT NULL PRIMARY KEY AUTO_INCREMENT, `email` varchar(100) NOT NULL, `name` varchar(50) NOT NULL, `password` varchar(50) NOT NULL, `level` int NOT NULL DEFAULT 1, `job` varchar(20) NOT NULL DEFAULT 'none', `course_ing` int NOT NULL DEFAULT 0, `course_ed` int NOT NULL DEFAULT 0, `skillcount` int NOT NULL DEFAULT 0 );
+CREATE TABLE `user_course_circumstances` ( `userID` int NOT NULL PRIMARY KEY, `front-end` int NOT NULL DEFAULT 0, `server` int NOT NULL DEFAULT 0, `C-DEV` int NOT NULL DEFAULT 0, `DB-MNG` int NOT NULL DEFAULT 0 );
+CREATE TABLE `user_front_circumstances` ( `userID` int NOT NULL PRIMARY KEY, `HTML` int NOT NULL DEFAULT 0, `CSS` int NOT NULL DEFAULT 0, `JS` int NOT NULL DEFAULT 0 );
+CREATE TABLE `codes` ( `id` int NOT NULL PRIMARY KEY AUTO_INCREMENT, `userID` int NOT NULL , `subject` int NOT NULL, `associated` int NOT NULL DEFAULT 0, `title` varchar(50) NOT NULL, `code` LONGTEXT NOT NULL, `lines` int NOT NULL );

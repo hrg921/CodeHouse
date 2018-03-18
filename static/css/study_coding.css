@@ -1,0 +1,249 @@
+/*
+*
+* File name   : study_coding
+* File type   : CSS
+* Dependancy  : none
+* Library     : none
+* Purpose     : Styling Common things
+* Common      : index page layout
+* First Author: Geon-Ho Han
+* Contact     : hrg921@gmail.com, Kakao Talk: hrg921, @풀스택개발자
+* Last Fixer  : Geon-Ho Han
+* First-Date  : 10-04 2015
+* Last-Date   : 10-04 2015
+* Version     : v0.0.1
+*
+*/
+
+/* ---------------------- Basic Title Configuration Start ---------------------- */
+
+/* ---------------------- Basic Title Configuration End ---------------------- */
+
+/* ---------------------- Responsive Title Properties Start ---------------------- */
+
+/* ---------------------- 1. Phone Style Start ---------------------- */
+
+/* ---------------------- 1-1. Phone Portrait Style Start ---------------------- */
+
+/* ---------------------- Phone Portrait Style 320px ~ 600px ---------------------- */
+
+@media screen and (min-width:320px) { }
+
+/* ---------------------- 1-1. Phone Portrait Style End ---------------------- */
+
+/* ---------------------- 1-2. Phone Landscape Style Start ---------------------- */
+
+/* ---------------------- Phone Landscape Style 480px ~ 800px ---------------------- */
+
+@media (min-width:480px) and (orientation:landscape) { }
+
+/* ---------------------- 1-2. Phone Landscape Style End ---------------------- */
+
+/* ---------------------- 1. Phone Style End ---------------------- */
+
+/* ---------------------- 2. Tablet Style Start ---------------------- */
+
+/* ---------------------- 2-1. Tablet Portrait Style Start ---------------------- */
+
+/* ---------------------- Tablet Portrait Style 600px ~ 1025px ---------------------- */
+
+@media (min-width:600px) and (orientation:portrait) { }
+
+/* ---------------------- 2-1. Tablet Portrait Style End ---------------------- */
+
+/* ---------------------- 2-2. Tablet Landscape Style Start ---------------------- */
+
+/* ---------------------- Tablet Landscape Style 800px ~ 1280px ---------------------- */
+
+@media (min-width:801px) and (orientation:landscape) { }
+
+/* ---------------------- 2-2. Tablet Landscape Style End ---------------------- */
+
+/* ---------------------- 2. Tablet Style End ---------------------- */
+
+/* ---------------------- 3. Desktop Style Start ---------------------- */
+
+/* ---------------------- Desktop Style 1280px ~ landscape ---------------------- */
+
+@media (min-width:1281px) and (orientation:landscape) {
+
+  section {
+    width: 100%;
+    height: 900px;
+    background: #25323F;
+  }
+
+  article {
+    width: 1240px;
+    height: 700px;
+    margin: auto;
+    padding-top: 25px;
+  }
+
+  .content {
+    width: 50%;
+    height: 650px;
+    margin-top: 25px;
+    display: inline-block;
+    float: left;
+  }
+
+  #editor {
+    width: 90%;
+    height: 100%;
+    margin: auto;
+    border: 1px solid #cccccc;
+  }
+
+  #line_number {
+    width: 12.5%;
+    height: 100%;
+    border-right: 1px solid #cccccc;
+    float: left;
+    display: inline-block;
+  }
+
+  #line_number > p {
+    color: white;
+    font-size: 20px;
+    line-height: 25px;
+    float: right;
+    margin-right: 10px;
+    text-align: right;
+    font-family: 'Noto Sans KR', sans-serif;
+  }
+
+  #coding_editor {
+    width: calc(87.5% - 1px);
+    height: 100%;
+    display: inline-block;
+  }
+
+  #code_editor {
+    color: white;
+    background: #25323F;
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  textarea {
+    width: 98.8%;
+  }
+
+  #instruction_container {
+    width: 1240px;
+    margin: auto;
+  }
+
+  #instruction {
+    width: 800px;
+    height: 150px;
+    margin: auto;
+    text-align: center;
+  }
+
+  #instruction > div {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  #instruction > div > p {
+    color: white;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 100;
+    font-size: 20px;
+  }
+
+  #live_html {
+    display: inline-block;
+    float: left;
+    border: 1px solid white;
+    background: white;
+    width: 534px;
+    height: 634px;
+  }
+
+  .profile {
+    width: 1050px;
+    height: 200px;
+    display: inline-block;
+  }
+
+  .profile_nametag {
+    width: 250px;
+    height: 80px;
+    margin: auto;
+    margin-top: 40px;
+  }
+
+  .profile_image {
+    width: 85px;
+    height: 80px;
+    display: inline-block;
+    float: left;
+  }
+
+  .profile_image > img {
+    width: 80px;
+    height: 80px;
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+  }
+
+  .profile_expgauge {
+    width:40%;
+    height:20%;
+    background-color:#EBEBEB;
+    margin: auto;
+  }
+
+  .profile_expgauge_gaugebar {
+    background-color:#FF6F6F;
+  }
+
+  .profile_char {
+    display: inline-block;
+    float: left;
+    height: 150px;
+  }
+
+  .profile_username {
+    font-size: 35px;
+    font-family: 'NanumGothic', sans-serif;
+  }
+
+  .profile_userclass {
+    font-size: 23px;
+    font-family: 'NanumGothic', sans-serif;
+  }
+
+  .leftbutton {
+    display: inline-block;
+    width: 90px;
+    height: 135px;
+  }
+
+  .rightbutton {
+    display: inline-block;
+    width: 90px;
+    height: 135px;
+  }
+
+  .leftbutton > a > img {
+    width: 90px;
+    height: 135px;
+  }
+
+  .rightbutton > a > img {
+    width: 90px;
+    height: 135px;
+  }
+
+}
+
+/* ---------------------- 3. Desktop Style End ---------------------- */
+
+/* ---------------------- Responsive Common Properties End ---------------------- */

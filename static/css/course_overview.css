@@ -1,0 +1,159 @@
+/*
+*
+* File name   : course_overview
+* File type   : CSS
+* Dependancy  : none
+* Library     : none
+* Purpose     : Styling Common things
+* Common      : course_overview page layout
+* First Author: Geon-Ho Han
+* Contact     : hrg921@gmail.com, Kakao Talk: hrg921, @풀스택개발자
+* Last Fixer  : Geon-Ho Han
+* First-Date  : 10-04 2015
+* Last-Date   : 10-04 2015
+* Version     : v0.0.1
+*
+*/
+
+/* ---------------------- Basic Title Configuration Start ---------------------- */
+
+/* ---------------------- Basic Title Configuration End ---------------------- */
+
+/* ---------------------- Responsive Title Properties Start ---------------------- */
+
+/* ---------------------- 1. Phone Style Start ---------------------- */
+
+/* ---------------------- 1-1. Phone Portrait Style Start ---------------------- */
+
+/* ---------------------- Phone Portrait Style 320px ~ 600px ---------------------- */
+
+@media screen and (min-width:320px) { }
+
+/* ---------------------- 1-1. Phone Portrait Style End ---------------------- */
+
+/* ---------------------- 1-2. Phone Landscape Style Start ---------------------- */
+
+/* ---------------------- Phone Landscape Style 480px ~ 800px ---------------------- */
+
+@media (min-width:480px) and (orientation:landscape) { }
+
+/* ---------------------- 1-2. Phone Landscape Style End ---------------------- */
+
+/* ---------------------- 1. Phone Style End ---------------------- */
+
+/* ---------------------- 2. Tablet Style Start ---------------------- */
+
+/* ---------------------- 2-1. Tablet Portrait Style Start ---------------------- */
+
+/* ---------------------- Tablet Portrait Style 600px ~ 1025px ---------------------- */
+
+@media (min-width:600px) and (orientation:portrait) { }
+
+/* ---------------------- 2-1. Tablet Portrait Style End ---------------------- */
+
+/* ---------------------- 2-2. Tablet Landscape Style Start ---------------------- */
+
+/* ---------------------- Tablet Landscape Style 800px ~ 1280px ---------------------- */
+
+@media (min-width:801px) and (orientation:landscape) { }
+
+/* ---------------------- 2-2. Tablet Landscape Style End ---------------------- */
+
+/* ---------------------- 2. Tablet Style End ---------------------- */
+
+/* ---------------------- 3. Desktop Style Start ---------------------- */
+
+/* ---------------------- Desktop Style 1280px ~ landscape ---------------------- */
+
+@media (min-width:1281px) and (orientation:landscape) {
+
+  section {
+    width: 1240px;
+    height: 1000px;
+    margin: auto;
+    text-align: center;
+    margin-top: 100px;
+    font-family: 'Noto Sans KR', sans-serif;
+  }
+
+  #section_title {
+    height: 40px;
+    border-bottom: 1px solid black;
+    display: inline-block;
+  }
+
+  #section_title > h1 {
+    font-size: 30px;
+    font-weight: 300;
+  }
+
+  .course {
+    width: 100%;
+    height: 500px;
+    vertical-align: middle;
+    margin-top: 40px;
+  }
+
+  .course_logo {
+    width: 25%;
+    height: 100%;
+    display: inline-block;
+    float: left;
+    vertical-align: middle;
+  }
+
+  .course_logo > img {
+    display: inline-block;
+    vertical-align: middle;
+    width: 310px;
+    height: 310px;
+  }
+
+  .course_desc {
+    width: 60%;
+    height: 100%;
+    display: inline-block;
+    float: left;
+  }
+
+  .course_real_desc {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: left;
+  }
+
+  .course_desc > div > p {
+    font-weight: 100;
+    font-size: 20px;
+    line-height: 35px;
+  }
+
+  .course_enter {
+    width: 15%;
+    height: 100%;
+    display: inline-block;
+    float: left;
+  }
+
+  .course_enter > div {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .course_enter > div > img {
+    display: inline-block;
+    vertical-align: middle;
+    width: 120px;
+    height: 120px;
+  }
+
+  .course_enter > div > p {
+    margin-top: 10px;
+    color: #999999;
+  }
+
+}
+
+/* ---------------------- 3. Desktop Style End ---------------------- */
+
+/* ---------------------- Responsive Title Properties End ---------------------- */

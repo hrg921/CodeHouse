@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CodeHouse</title>
+  <script src="../static/js/config.js"></script>
+  <!-- Libraries -->
+  <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+  <!-- StyleSheets -->
+  <link rel="stylesheet" href="../static/css/common.css">
+  <link rel="stylesheet" href="../static/css/index.css">
+  <!-- Scripts -->
+  <script src="../static/js/index_html/animation.js"></script>
+  <script src="../static/js/index_html/login.js"></script>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div id="header_container">
+        <div id="header_logo_container"><span class="vertical_align_middle"></span><a href="/"><div id="header_logo"><h1><span class="bold">CODE</span> HOUSE</h1></div></a></div>
+        <div id="header_menu_container">
+          <a href="/course_overview"><span class="vertical_align_middle"></span><div class="header_menu" id="header_menu_first"><p>과정 구경하기</p></div></a>
+          <a href="/storage"><span class="vertical_align_middle"></span><div class="header_menu"><p>코드창고 입장</p></div></a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <section>
+    <div class="container">
+      <article>
+        <span class="vertical_align_middle"></span>
+        <div id="main_container">
+          <img src="../static/img/CodeHouse_LOGO_White.svg" alt="">
+          <p><span class="bold">집</span>에서 <span class="bold">스스로</span> 하는 <span class="bold">무료</span> 프로그래밍 공부</p>
+        </div>
+      </article>
+      <article>
+        <div class="login_menu nonselected" id="sign_up_select_box"><p>Sign up</p></div>
+        <div class="login_menu selected" id="sign_in_select_box"><p>Login</p></div>
+        <div class="login_box" id="signUp_box">
+          <div class="login_container">
+            <input type="email" placeholder="이메일" id="email_input_box2">
+            <input type="text" placeholder="사용자 이름" id="name_input_box2">
+            <input type="password" placeholder="패스워드" id="pw_input_box2">
+            <a href="#"><div class="button" id="signup_button">START!</div></a>
+            <p>or Sign Up with</p>
+            <div class="sns_login first-sns"><span class="vertical_align_middle"></span><img src="../static/img/google_logo.svg" alt=""></div>
+            <div class="sns_login"><span class="vertical_align_middle"></span><img src="../static/img/facebook_logo.svg" alt=""></div>
+          </div>
+        </div>
+        <div class="login_box" id="signIn_box">
+          <div class="login_container">
+            <input type="email" placeholder="이메일" id="email_input_box1">
+            <input type="password" placeholder="패스워드" id="pw_input_box1">
+            <a href="#"><div class="button" id="login_button">LOGIN!</div></a>
+            <p>or Login with</p>
+            <div class="sns_login first-sns"><span class="vertical_align_middle"></span><img src="../static/img/google_logo.svg" alt=""></div>
+            <div class="sns_login"><span class="vertical_align_middle"></span><img src="../static/img/facebook_logo.svg" alt=""></div>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+  <nav>
+    <div class="container">
+      <div id="left_arrow" class="arrow_container"><span class="vertical_align_middle"></span><div><img src="../static/img/left.svg" alt=""></div></div>
+      <div id="nav_container">
+        <span class="vertical_align_middle"></span><div id="nav_text_container">
+          <div id="nav_text_1"><p class="nav_text">"<span class="strong">코드하우스</span>에 처음 오셨나요?"</p></div>
+          <div id="nav_text_2"><p class="nav_text">CODEHOUSE 둘러보기</p></div>
+        </div>
+      </div>
+      <div id="right_arrow" class="arrow_container"><span class="vertical_align_middle"></span><div><img src="../static/img/right.svg" alt=""></div></div>
+    </div>
+  </nav>
+  <div id="makers_container">
+    <div class="container">
+      <div id="makers_title"><h1>집 짓는 사람들</h1></div>
+      <div id="maker_profile_container">
+        <div id="Kim" class="maker_profile">
+          <div id="Kim_image" class="maker_image"></div>
+          <h1 class="maker_name">김 정 욱</h1>
+          <div class="maker_role_container"><p class="maker_role">기획<br>클라이언트 개발<br>콘텐츠 제작</p></div>
+          <div class="maker_sns_cotainer">
+            <div class="maker_sns"><span class="vertical_align_middle"></span><img class="go" src="../static/img/sns/go.svg" alt=""></div>
+            <div class="maker_sns"><span class="vertical_align_middle"></span><img class="fb" src="../static/img/sns/fb.svg" alt=""></div>
+            <div class="maker_sns"><span class="vertical_align_middle"></span><img class="tw" src="../static/img/sns/tw.svg" alt=""></div>
+            <div class="maker_sns"><span class="vertical_align_middle"></span><img class="dr" src="../static/img/sns/dr.svg" alt=""></div>
+          </div>
+        </div>
+        <div id="Han" class="maker_profile">
+          <div id="Han_image" class="maker_image"></div>
+          <h1 class="maker_name">한 건 호</h1>
+          <div class="maker_role_container"><p class="maker_role">기획<br>서버 개발<br>클라이언트 개발</p></div>
+          <div class="maker_sns_cotainer">
+            <div class="maker_sns"><span class="vertical_align_middle"></span><img class="go" src="../static/img/sns/go.svg" alt=""></div>
+            <div class="maker_sns"><span class="vertical_align_middle"></span><img class="fb" src="../static/img/sns/fb.svg" alt=""></div>
+            <div class="maker_sns"><span class="vertical_align_middle"></span><img class="tw" src="../static/img/sns/tw.svg" alt=""></div>
+            <div class="maker_sns"><span class="vertical_align_middle"></span><img class="dr" src="../static/img/sns/dr.svg" alt=""></div>
+          </div>
+        </div>
+        <div id="In" class="maker_profile">
+          <div id="In_image" class="maker_image"></div>
+          <h1 class="maker_name">인 서 연</h1>
+          <div class="maker_role_container"><p class="maker_role">기획<br>디자인</p></div>
+          <div class="maker_sns_cotainer">
+            <div class="maker_sns"><span class="vertical_align_middle"></span><img class="go" src="../static/img/sns/go.svg" alt=""></div>
+            <div class="maker_sns"><span class="vertical_align_middle"></span><img class="fb" src="../static/img/sns/fb.svg" alt=""></div>
+            <div class="maker_sns"><span class="vertical_align_middle"></span><img class="tw" src="../static/img/sns/tw.svg" alt=""></div>
+            <div class="maker_sns"><span class="vertical_align_middle"></span><img class="dr" src="../static/img/sns/dr.svg" alt=""></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr id="copyright_hr">
+  <footer>
+    <div class="container">
+      <span class="vertical_align_middle"></span>
+      <div id="footer_wrapper">
+        <span class="vertical_align_middle"></span>
+        <div>
+          <img id="footer_image" src="../static/img/CodeHouse_LOGO_e1e1e1.svg" alt="">
+          <p id="copyright">Made in SEOUL © 2015 CodeHouse</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

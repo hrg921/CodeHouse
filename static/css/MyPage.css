@@ -1,0 +1,438 @@
+/*
+*
+* File name   : MyPage
+* File type   : CSS
+* Dependancy  : none
+* Library     : none
+* Purpose     : Styling Common things
+* Common      : MyPage Layout
+* First Author: Geon-Ho Han
+* Contact     : hrg921@gmail.com, Kakao Talk: hrg921, @풀스택개발자
+* Last Fixer  : Geon-Ho Han
+* First-Date  : 9-30 2015
+* Last-Date   : 9-30 2015
+* Version     : v0.0.1
+*
+*/
+
+/* ---------------------- Basic Title Configuration Start ---------------------- */
+
+.nav_menu_column {
+  width: 30%;
+  height: 100%;
+  display: inline-block;
+  float: left;
+  text-align: center;
+}
+
+.nav_profile_column {
+  width: 40%;
+  height: 100%;
+  display: inline-block;
+  float: left;
+  text-align: center;
+}
+
+/* ---------------------- Basic Title Configuration End ---------------------- */
+
+/* ---------------------- Responsive Title Properties Start ---------------------- */
+
+/* ---------------------- 1. Phone Style Start ---------------------- */
+
+/* ---------------------- 1-1. Phone Portrait Style Start ---------------------- */
+
+/* ---------------------- Phone Portrait Style 320px ~ 600px ---------------------- */
+
+@media screen and (min-width:320px) { }
+
+/* ---------------------- 1-1. Phone Portrait Style End ---------------------- */
+
+/* ---------------------- 1-2. Phone Landscape Style Start ---------------------- */
+
+/* ---------------------- Phone Landscape Style 480px ~ 800px ---------------------- */
+
+@media (min-width:480px) and (orientation:landscape) { }
+
+/* ---------------------- 1-2. Phone Landscape Style End ---------------------- */
+
+/* ---------------------- 1. Phone Style End ---------------------- */
+
+/* ---------------------- 2. Tablet Style Start ---------------------- */
+
+/* ---------------------- 2-1. Tablet Portrait Style Start ---------------------- */
+
+/* ---------------------- Tablet Portrait Style 600px ~ 1025px ---------------------- */
+
+@media (min-width:600px) and (orientation:portrait) { }
+
+/* ---------------------- 2-1. Tablet Portrait Style End ---------------------- */
+
+/* ---------------------- 2-2. Tablet Landscape Style Start ---------------------- */
+
+/* ---------------------- Tablet Landscape Style 800px ~ 1280px ---------------------- */
+
+@media (min-width:801px) and (orientation:landscape) { }
+
+/* ---------------------- 2-2. Tablet Landscape Style End ---------------------- */
+
+/* ---------------------- 2. Tablet Style End ---------------------- */
+
+/* ---------------------- 3. Desktop Style Start ---------------------- */
+
+/* ---------------------- Desktop Style 1280px ~ landscape ---------------------- */
+
+@media (min-width:1281px) and (orientation:landscape) {
+
+  .container > nav {
+    width: 1240px;
+    height: 85px;
+    margin: auto;
+    margin-top: 27px;
+    background: #E1E1E1;
+    vertical-align: middle;
+  }
+
+  .nav_menu_column > p {
+    font-family: 'NanumGothic', sans-serif;
+    color: #888888;
+    font-size: 20px;
+    line-height: 85px;
+  }
+
+  #nav_profile_container {
+    width: 300px;
+    height: 100%;
+    margin: auto;
+    display: inline-block;
+  }
+
+  #nav_image_container {
+    width: 85px;
+    height: 85px;
+    display: inline-block;
+    float:left;
+    text-align: center;
+  }
+
+  #nav_image {
+    width: 60px;
+    height: 60px;
+    webkit-border-radius: 100%;
+    moz-border-radius: 100%;
+    border-radius: 100%;
+    background: white;
+    margin: auto;
+  }
+
+  #nav_image_container, #nav_image, #nav_profile_desc {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  #nav_profile_desc_container {
+    width: 215px;
+    height: 100%;
+    float: left;
+  }
+
+  #nav_profile_desc > h1 {
+    color: #666666;
+  }
+
+  #nav_profile_desc > p {
+    color: #999999;
+  }
+
+  section {
+    width: 1240px;
+    margin: auto;
+  }
+
+  section > article:first-child {
+    width: 100%;
+    height: 320px;
+    margin-top: 20px;
+  }
+
+  section > article:nth-child(2) {
+    width: 100%;
+    height: 550px;
+  }
+
+  section > article:nth-child(3) {
+    width: 100%;
+    text-align: center;
+  }
+
+  .article_circle_container {
+    width: 33.33333333333333%;
+    height: 100%;
+    float: left;
+    text-align: center;
+  }
+
+  .article_circle {
+    width: 200px;
+    height: 200px;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+    display: inline-block;
+    vertical-align: middle;
+    border: 1px solid #B8C6C6;
+  }
+
+  .article_circle > div {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .article_circle:hover {
+    background: #4473A0;
+  }
+
+  .count {
+    color: #4473A0;
+    font-family: 'NanumGothic', sans-serif;
+    font-weight: 400;
+    font-size: 70px;
+  }
+
+  .article_circle:hover > div > .count {
+    color: #fff;
+  }
+
+  .count_title {
+    color: #656565;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 100;
+    font-size: 25px;
+  }
+
+  .article_circle:hover > div > .count_title {
+    color: #fff;
+  }
+
+  article > nav {
+    width: 33.3333333333%;
+    display: inline-block;
+    float: left;
+  }
+
+  article > nav > div {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  article > article {
+    width: 33.3333333333%;
+    margin-top: 5%;
+    text-align: center;
+    display: inline-block;
+    float: left;
+    text-align: center;
+  }
+
+  article > article > div {
+    display: inline-block;
+    vertical-align: middle;
+    height: 405px;
+  }
+
+  article > aside {
+    width: 33.3333333333%;
+    height: 100%;
+    display: inline-block;
+    float: left;
+    float: left;
+  }
+
+  .job_select_box {
+    width: 350px;
+    height: 125px;
+    margin: auto;
+    text-align: center;
+  }
+
+  .job_select_box:hover {
+    background: #FB7074;
+  }
+
+  .selected {
+    background: #FB7074;
+  }
+
+  .selected > p {
+    color: #fff !important;
+    font-weight: 500 !important;
+  }
+
+  .job_select_box > p {
+    display: inline-block;
+    vertical-align: middle;
+    color: #333333;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 300;
+    font-size: 25px;
+  }
+
+  .job_select_box:hover > p {
+    color: #fff;
+    font-weight: 500;
+  }
+
+  #job_box_graph_container {
+    width: 400px;
+    height: 360px;
+    display: inline-block;
+    vertical-align: middle;
+    background: #EBEBEB;
+  }
+
+  #job_box_graph_container > div {
+    width: 25%;
+    height: 100%;
+    display: inline-block;
+    float: left;
+  }
+
+  .job_graph_container {
+    width: 100%;
+    height: 80%;
+    margin-top: 72px;
+    position: relative;
+    text-align: center;
+  }
+
+  .job_graph {
+    width: 50%;
+    margin: auto;
+    background: #043464;
+    position: absolute;
+    bottom: 0%;
+    left: 25px;
+  }
+
+  .job_graph > p {
+    color: #fff;
+    display: none;
+  }
+
+  .job_graph:hover > p {
+    display: inline;
+  }
+
+  canvas {
+    width: 100%;
+    height: 100%;
+  }
+
+  #job_graph_title_container {
+    width: 400px;
+    height: 40px;
+    display: inline-block;
+  }
+
+  .job_graph_title {
+    width: 25%;
+    height: 100%;
+    display: inline-block;
+    float: left;
+  }
+
+  .job_graph_title > p {
+    line-height: 40px;
+    font-size: 15px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 300;
+  }
+
+  #process_graph_container {
+    width: 80%;
+    height: 320px;
+    margin-left: 20%;
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: 25px;
+  }
+
+  .process_graph_bar_container {
+    width: 100%;
+    height: 33.3333333333333%;
+  }
+
+  .process_graph_bar_container > div {
+    width: 100%;
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .process_graph_bar {
+    width: 100%;
+    height: 30px;
+  }
+
+  .process_graph {
+    width: 0;
+    height: 30px;
+    background: #043464;
+  }
+
+  #ing_container {
+    text-align: center;
+  }
+
+  #ing_classes_title {
+    font-size: 25px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    font-family: 'NanumGothic';
+  }
+
+  .ing_contents {
+    width: 50%;
+    margin: auto;
+    height: 100px;
+  }
+
+  .ing_contents > h1 {
+    display: inline-block;
+    font-size: 30px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 300;
+    float: left;
+    line-height: 100px;
+    width: 15%;
+  }
+
+  .ing_contents_graph_bar {
+    width: 75%;
+    height: 50px;
+    background: #EBEBEB;
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .ing_contents_graph {
+    height: 100%;
+    background: #FD7072;
+  }
+
+  .ing_contents_percent {
+    display: inline-block;
+    font-size: 20px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 100;
+    float: right;
+    vertical-align: middle;
+    line-height: 100px;
+  }
+
+  #HTML {
+    width: 50%;
+  }
+}
+
+/* ---------------------- 3. Desktop Style End ---------------------- */
+
+/* ---------------------- Responsive Title Properties End ---------------------- */

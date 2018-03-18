@@ -1,0 +1,387 @@
+/*
+*
+* File name   : index
+* File type   : CSS
+* Dependancy  : none
+* Library     : none
+* Purpose     : Styling Common things
+* Common      : index page layout
+* First Author: Geon-Ho Han
+* Contact     : hrg921@gmail.com, Kakao Talk: hrg921, @풀스택개발자
+* Last Fixer  : Geon-Ho Han
+* First-Date  : 9-29 2015
+* Last-Date   : 9-29 2015
+* Version     : v0.0.1
+*
+*/
+
+/* ---------------------- Basic Title Configuration Start ---------------------- */
+
+/* ---------------------- Basic Title Configuration End ---------------------- */
+
+/* ---------------------- Responsive Title Properties Start ---------------------- */
+
+/* ---------------------- 1. Phone Style Start ---------------------- */
+
+/* ---------------------- 1-1. Phone Portrait Style Start ---------------------- */
+
+/* ---------------------- Phone Portrait Style 320px ~ 600px ---------------------- */
+
+@media screen and (min-width:320px) { }
+
+/* ---------------------- 1-1. Phone Portrait Style End ---------------------- */
+
+/* ---------------------- 1-2. Phone Landscape Style Start ---------------------- */
+
+/* ---------------------- Phone Landscape Style 480px ~ 800px ---------------------- */
+
+@media (min-width:480px) and (orientation:landscape) { }
+
+/* ---------------------- 1-2. Phone Landscape Style End ---------------------- */
+
+/* ---------------------- 1. Phone Style End ---------------------- */
+
+/* ---------------------- 2. Tablet Style Start ---------------------- */
+
+/* ---------------------- 2-1. Tablet Portrait Style Start ---------------------- */
+
+/* ---------------------- Tablet Portrait Style 600px ~ 1025px ---------------------- */
+
+@media (min-width:600px) and (orientation:portrait) { }
+
+/* ---------------------- 2-1. Tablet Portrait Style End ---------------------- */
+
+/* ---------------------- 2-2. Tablet Landscape Style Start ---------------------- */
+
+/* ---------------------- Tablet Landscape Style 800px ~ 1280px ---------------------- */
+
+@media (min-width:801px) and (orientation:landscape) { }
+
+/* ---------------------- 2-2. Tablet Landscape Style End ---------------------- */
+
+/* ---------------------- 2. Tablet Style End ---------------------- */
+
+/* ---------------------- 3. Desktop Style Start ---------------------- */
+
+/* ---------------------- Desktop Style 1280px ~ landscape ---------------------- */
+
+@media (min-width:1281px) and (orientation:landscape) {
+
+  section {
+    width: 100%;
+    height: 550px;
+    background-image: url('../img/keyboard-biggest.jpeg');
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 3px;
+  }
+
+  section > div > article:first-child {
+    width: 872px;
+    height: 100%;
+    float: left;
+    text-align: center;
+  }
+
+  #main_container {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  #main_container > img {
+    width: 325px;
+  }
+
+  #main_container > p {
+    font-family: 'nanumbarunpen', sans-serif;
+    color: #D2E1F4;
+    font-size: 34.5px;
+    margin-top: 30px;
+  }
+
+  section > div > article:nth-child(2) {
+    width : 348px;
+    height: 100%;
+    background-color: white;
+    margin-right: 20px;
+    float: right;
+  }
+
+  .login_menu {
+    width: 174px;
+    height: 50px;
+    display: inline-block;
+    float: left;
+    text-align: center;
+  }
+
+  .nonselected {
+    background: #d7d7d7;
+  }
+
+  .nonselected:hover {
+    background: #e9e9e9;
+  }
+
+  .login_menu > p {
+    line-height: 50px;
+    color: #333333;
+  }
+
+  .login_box {
+    width: 348px;
+    height: 500px;
+  }
+
+  .login_container {
+    width: 250px;
+    height: 375px;
+    position: relative;
+    margin: auto;
+    margin-top: 125px;
+    margin-bottom: 50px;
+    text-align: center;
+  }
+
+  .button {
+    width: 120px;
+    height: 40px;
+    margin: auto;
+    background-color: #2E6790;
+    text-align: center;
+    color: white;
+    line-height: 40px;
+    margin-top: 40px;
+    font-size: 20px;
+    border-radius: 3px;
+  }
+
+  .login_container > p {
+    margin-top: 40px;
+    color: #a1a1a1;
+    font-family: 'NanumGothic', sans-serif;
+    font-weight: 400;
+  }
+
+  #signUp_box {
+    display: none;
+  }
+
+  input {
+    width: 225px;
+    font-size: 18px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 300;
+    height: 40px;
+    padding-left: 15px;
+    border: 2px solid #e0e0e0;
+  }
+
+  #email_input_box1 {
+    margin-bottom: 10px;
+  }
+
+  #email_input_box2 {
+    margin-bottom: 10px;
+  }
+
+  #name_input_box2 {
+    margin-bottom: 10px;
+  }
+
+  .sns_login {
+    height: 40px;
+    width: 112px;
+    border: 2px solid #e0e0e0;
+    display: inline-block;
+    float: left;
+    margin-top: 40px;
+  }
+
+  .first-sns {
+    margin-right: 18px;
+  }
+
+  .sns_login > img {
+    width: 20px;
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  nav {
+    width: 100%;
+    height: 140px;
+    background: #C4C4C4;
+    text-align: center;
+  }
+
+  .arrow_container {
+    width: 10%;
+    height: 100%;
+  }
+
+  .arrow_container > div {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  #left_arrow {
+    float: left;
+  }
+
+  #right_arrow {
+    float: right;
+  }
+
+  #nav_container {
+    width: 80%;
+    height: 100%;
+    float: left;
+  }
+
+  #nav_text_container {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  #nav_text_1 > p {
+    color: #333333;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 25px;
+    vertical-align: center;
+  }
+
+  .strong {
+    font-size: 30px;
+    font-weight: 700;
+  }
+
+  #nav_text_2 {
+    background: #959595;
+    display: inline-block;
+    padding: 3px;
+    margin-top: 7px;
+  }
+
+  #nav_text_2 > p {
+    font-family: 'NanumGothic', sans-serif;
+    font-size: 25px;
+    color: white;
+  }
+
+  #makers_container {
+    width: 100%;
+    height: 650px;
+    background-color: #E1E1E1;
+    margin-top: 3px;
+  }
+
+  #makers_title {
+    width: 100%;
+    text-align: center;
+  }
+
+  #makers_title > h1 {
+    font-family: 'NanumGothic', sans-serif;
+    font-weight: 400;
+    color: #747474;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  #maker_profile_container {
+    width: 1218px;
+    height: 449px;
+    margin: auto;
+  }
+
+  .maker_profile {
+    width: 300px;
+    height: 100%;
+    border: 3px solid white;
+    display: inline-block;
+    float: left;
+    text-align: center;
+  }
+
+  #Kim {
+    margin-left: 50px;
+  }
+
+  #Kim, #Han {
+    margin-right: 100px;
+  }
+
+  .maker_image {
+    width: 160px;
+    height: 160px;
+    webkit-border-radius: 100%;
+    moz-border-radius: 100%;
+    border-radius: 100%;
+    background-color: white;
+    margin: auto;
+    margin-top: 30px;
+  }
+
+  .maker_name {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 300;
+    font-size: 25px;
+    margin-top: 20px;
+  }
+
+  .maker_role_container {
+    height: 90px;
+  }
+
+  .maker_role {
+    margin-top: 20px;
+    font-size: 17.5px;
+    line-height: 30px;
+    color: #666666;
+  }
+
+  .maker_sns_cotainer {
+    width: 100%;
+    height: 60px;
+    margin-top: 32px;
+  }
+
+  .maker_sns {
+    width: 25%;
+    height: 100%;
+    display: inline-block;
+    float: left;
+  }
+
+  .maker_sns:hover {
+    background-color: white;
+  }
+
+  .maker_sns > img {
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .maker_sns:hover > .go {
+    content: url('../img/sns_c/go_c.svg');
+  }
+
+  .maker_sns:hover > .fb {
+    content: url('../img/sns_c/fb_c.svg');
+  }
+
+  .maker_sns:hover > .tw {
+    content: url('../img/sns_c/tw_c.svg');
+  }
+
+  .maker_sns:hover > .dr {
+    content: url('../img/sns_c/dr_c.svg');
+  }
+}
+
+/* ---------------------- 3. Desktop Style End ---------------------- */
+
+/* ---------------------- Responsive Title Properties End ---------------------- */

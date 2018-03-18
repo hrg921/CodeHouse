@@ -1,0 +1,206 @@
+/*
+*
+* Name        : User_Info_Edit
+* File type   : CSS
+* Dependancy  : none
+* Library     : none
+* Purpose     : Styling User_Info_Edit Page
+* Common      : Same page layout
+* First Author: Geon-Ho Han
+* Contact     : Kakao_Talk: @풀스택개발자, hrg921, Email: hrg921@gmail.com
+* Last Fixer  : Geon-Ho Han
+* First-Date  : 10-02 2015
+* Last-Date   : 10-02 2015
+* Version     : v0.0.1
+*
+*/
+
+/* ---------------------- Basic User_Info_Edit Configuration Start ---------------------- */
+
+.nav_menu_column {
+  width: 30%;
+  height: 100%;
+  display: inline-block;
+  float: left;
+  text-align: center;
+}
+
+.nav_profile_column {
+  width: 40%;
+  height: 100%;
+  display: inline-block;
+  float: left;
+  text-align: center;
+}
+
+/* ---------------------- Basic User_Info_Edit Configuration End ---------------------- */
+
+/* ---------------------- Responsive User_Info_Edit Properties Start ---------------------- */
+
+/* ---------------------- 1. Phone Style Start ---------------------- */
+
+/* ---------------------- 1-1. Phone Portrait Style Start ---------------------- */
+
+/* ---------------------- Phone Portrait Style 320px ~ 600px ---------------------- */
+
+@media screen and (min-width:320px) { }
+
+/* ---------------------- 1-1. Phone Portrait Style End ---------------------- */
+
+/* ---------------------- 1-2. Phone Landscape Style Start ---------------------- */
+
+/* ---------------------- Phone Landscape Style 480px ~ 800px ---------------------- */
+
+@media screen and (min-width:480px) and (orientation:landscape) { }
+
+/* ---------------------- 1-2. Phone Landscape Style End ---------------------- */
+
+/* ---------------------- 1. Phone Style End ---------------------- */
+
+/* ---------------------- 2. Tablet Style Start ---------------------- */
+
+/* ---------------------- 2-1. Tablet Portrait Style Start ---------------------- */
+
+/* ---------------------- Tablet Portrait Style 600px ~ 1025px ---------------------- */
+
+@media screen and (min-width:600px) and (orientation:portrait) { }
+
+/* ---------------------- 2-1. Tablet Portrait Style End ---------------------- */
+
+/* ---------------------- 2-2. Tablet Landscape Style Start ---------------------- */
+
+/* ---------------------- Tablet Landscape Style 800px ~ 1280px ---------------------- */
+
+@media screen and (min-width:801px) and (orientation:landscape) { }
+
+/* ---------------------- 2-2. Tablet Landscape Style End ---------------------- */
+
+/* ---------------------- 2. Tablet Style End ---------------------- */
+
+/* ---------------------- 3. Desktop Style Start ---------------------- */
+
+/* ---------------------- Desktop Style 1280px ~ landscape ---------------------- */
+
+@media screen and (min-width:1281px) and (orientation:landscape) {
+
+  .container > nav {
+    width: 1240px;
+    height: 85px;
+    margin: auto;
+    margin-top: 27px;
+    background: #E1E1E1;
+    vertical-align: middle;
+  }
+
+  .nav_menu_column > p {
+    font-family: 'NanumGothic', sans-serif;
+    color: #888888;
+    font-size: 20px;
+    line-height: 85px;
+  }
+
+  #nav_profile_container {
+    width: 300px;
+    height: 100%;
+    margin: auto;
+    display: inline-block;
+  }
+
+  #nav_image_container {
+    width: 85px;
+    height: 85px;
+    display: inline-block;
+    float:left;
+    text-align: center;
+  }
+
+  #nav_image {
+    width: 60px;
+    height: 60px;
+    webkit-border-radius: 100%;
+    moz-border-radius: 100%;
+    border-radius: 100%;
+    background: white;
+    margin: auto;
+  }
+
+  #nav_image_container, #nav_image, #nav_profile_desc {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  #nav_profile_desc_container {
+    width: 215px;
+    height: 100%;
+    float: left;
+  }
+
+  #nav_profile_desc > h1 {
+    color: #666666;
+  }
+
+  #nav_profile_desc > p {
+    color: #999999;
+  }
+
+  section {
+    width: 400px;
+    height: 700px;
+    margin: auto;
+    text-align: center;
+  }
+
+  section > article {
+    width: 90%;
+    height: 600px;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+  }
+
+  #user_profile_image {
+    display: inline-block;
+    width: 175px;
+    height: 175px;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+    background-color: #e1e1e1;
+    margin-bottom: 30px;
+  }
+
+  #user_profile_image > p {
+    color: white;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 20px;
+    margin-top: 120px;
+  }
+
+  input {
+    width: 70%;
+    height: 30px;
+    display: inline-block;
+    font-size: 15px;
+    margin: auto;
+    margin-bottom: 20px;
+    padding-left: 10px;
+    border: 2px solid #e1e1e1;
+  }
+
+  #ok_button {
+    width: 30%;
+    height: 30px;
+    display: inline-block;
+    background: #224C75;
+    color: white;
+  }
+
+  #ok_button > p {
+    font-family: 'Noto Sans KR', sans-serif;
+    line-height: 30px;
+  }
+}
+
+/* ---------------------- 3. Desktop Style End ---------------------- */
+
+/* ---------------------- Responsive User_Info_Edit Properties End ---------------------- */

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CodeHouse</title>
+  <script src="../static/js/config.js"></script>
+  <!-- Libraries -->
+  <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+  <!-- StyleSheets -->
+  <link rel="stylesheet" href="../static/css/common.css">
+  <link rel="stylesheet" href="../static/css/MyPage.css">
+  <!-- Scripts -->
+  <script src="../static/js/MyPage_html/get_info.js"></script>
+  <script src="../static/js/user_info.js"></script>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div id="header_container">
+        <div id="header_logo_container"><span class="vertical_align_middle"></span><a href="/"><div id="header_logo"><h1><span class="bold">CODE</span> HOUSE</h1></div></a></div>
+        <div id="header_menu_container">
+          <a href="/course_overview"><span class="vertical_align_middle"></span><div class="header_menu" id="header_menu_first"><p>과정 구경하기</p></div></a>
+          <a href="/storage"><span class="vertical_align_middle"></span><div class="header_menu"><p>코드창고 입장</p></div></a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="container">
+    <nav>
+      <a href="/my_storage"><div class="nav_menu_column"><p>내 코드창고</p></div></a>
+      <div class="nav_profile_column">
+        <div id="nav_profile_container">
+          <div id="nav_image_container">
+            <span class="vertical_align_middle"></span><div id="nav_image"></div>
+          </div>
+          <span class="vertical_align_middle"></span>
+          <div id="nav_profile_desc_container">
+            <span class="vertical_align_middle"></span>
+            <div id="nav_profile_desc">
+              <h1></h1>
+              <p></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="/edit"><div class="nav_menu_column"><p>정보수정하기</p></div></a>
+    </nav>
+    <section>
+      <article>
+        <div class="article_circle_container">
+          <span class="vertical_align_middle"></span>
+          <div class="article_circle">
+            <span class="vertical_align_middle"></span>
+            <div>
+              <p class="count" id="process_count"></p>
+              <p class="count_title">진행</p>
+            </div>
+          </div>
+        </div>
+        <div class="article_circle_container">
+          <span class="vertical_align_middle"></span>
+          <div class="article_circle">
+            <span class="vertical_align_middle"></span>
+            <div>
+              <p class="count" id="complete_count"></p>
+              <p class="count_title">완료</p>
+            </div>
+          </div>
+        </div>
+        <div class="article_circle_container">
+          <span class="vertical_align_middle"></span>
+          <div class="article_circle">
+            <span class="vertical_align_middle"></span>
+            <div>
+              <p class="count" id="skill_count"></p>
+              <p class="count_title">스킬</p>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article>
+        <nav>
+          <span class="vertical_align_middle"></span>
+          <div>
+            <div class="job_select_box selected">
+              <span class="vertical_align_middle"></span><p>프론트엔드</p>
+            </div>
+            <div class="job_select_box">
+              <span class="vertical_align_middle"></span><p>서버</p>
+            </div>
+            <div class="job_select_box">
+              <span class="vertical_align_middle"></span><p>C개발자</p>
+            </div>
+            <div class="job_select_box">
+              <span class="vertical_align_middle"></span><p>DB관리자</p>
+            </div>
+          </div>
+          <script>
+            $('.job_select_box').click(function() {
+              alert('서버, C개발자, DB관리자 코스는 제작중에 있습니다.');
+            });
+          </script>
+        </nav>
+        <article>
+          <span class="vertical_align_middle"></span>
+          <div>
+            <div id="job_box_graph_container">
+              <div>
+                <div class="job_graph_container"><div class="job_graph" id="front-end"><p>0%</p></div></div>
+              </div>
+              <div>
+                <div class="job_graph_container"><div class="job_graph" id="server"><p>0%</p></div></div>
+              </div>
+              <div>
+                <div class="job_graph_container"><div class="job_graph" id="c-developer"><p>0%</p></div></div>
+              </div>
+              <div>
+                <div class="job_graph_container"><div class="job_graph" id="db-manager"><p>0%</p></div></div>
+              </div>
+            </div>
+            <div id="job_graph_title_container">
+              <div class="job_graph_title"><p>프론트엔드</p></div>
+              <div class="job_graph_title"><p>서버</p></div>
+              <div class="job_graph_title"><p>C개발자</p></div>
+              <div class="job_graph_title"><p>DB관리자</p></div>
+            </div>
+          </div>
+        </article>
+        <aside>
+          <div>
+            <div id="process_graph_container">
+              <div class="process_graph_bar_container">
+                <span class="vertical_align_middle"></span>
+                <div>
+                  <h1 class="process_graph_title">HTML</h1>
+                  <div class="process_graph_bar">
+                    <div class="process_graph" id="process_graph_html"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="process_graph_bar_container">
+                <span class="vertical_align_middle"></span>
+                <div>
+                  <h1 class="process_graph_title">CSS</h1>
+                  <div class="process_graph_bar">
+                    <div class="process_graph" id="process_graph_css"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="process_graph_bar_container">
+                <span class="vertical_align_middle"></span>
+                <div>
+                  <h1 class="process_graph_title">JavaScript</h1>
+                  <div class="process_graph_bar">
+                    <div class="process_graph" id="process_graph_js"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </aside>
+      </article>
+      <hr>
+      <article id="ing_container">
+        <h1 id="ing_classes_title">현재 진행중인 수업</h1>
+        <div id="ing_contents_container">
+        </div>
+      </article>
+    </section>
+  </div>
+  <hr id="copyright_hr">
+  <footer>
+    <div class="container">
+      <span class="vertical_align_middle"></span>
+      <div id="footer_wrapper">
+        <span class="vertical_align_middle"></span>
+        <div>
+          <img id="footer_image" src="../static/img/CodeHouse_LOGO_e1e1e1.svg" alt="">
+          <p id="copyright">Made in SEOUL © 2015 CodeHouse</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

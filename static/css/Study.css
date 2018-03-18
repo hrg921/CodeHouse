@@ -1,0 +1,270 @@
+/*
+*
+* Name        : responsive-web-desing-guide.css
+* File type   : CSS
+* Dependancy  : none
+* Library     : none
+* Purpose     : Guide for responsive web design
+* Common      : Responsive Web Design Frame
+* First Author: Geon-Ho Han
+* Contact     : Kakao_Talk: @풀스택개발자, hrg921, Email: hrg921@gmail.com
+* Last Fixer  : Geon-Ho Han
+* First-Date  : 9-26 2015
+* Last-Date   : 9-26 2015
+* Version     : v0.0.1
+*
+*/
+
+/* ---------------------- Basic study Configuration Start ---------------------- */
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+
+
+
+/* ---------------------- Basic study Configuration End ---------------------- */
+
+/* ---------------------- Responsive study Properties Start ---------------------- */
+
+/* ---------------------- 1. Phone Style Start ---------------------- */
+
+/* ---------------------- 1-1. Phone Portrait Style Start ---------------------- */
+
+/* ---------------------- Phone Portrait Style 320px ~ 600px ---------------------- */
+
+@media screen and (min-width:320px) { }
+
+/* ---------------------- 1-1. Phone Portrait Style End ---------------------- */
+
+/* ---------------------- 1-2. Phone Landscape Style Start ---------------------- */
+
+/* ---------------------- Phone Landscape Style 480px ~ 800px ---------------------- */
+
+@media screen and (min-width:480px) and (orientation:landscape) { }
+
+/* ---------------------- 1-2. Phone Landscape Style End ---------------------- */
+
+/* ---------------------- 1. Phone Style End ---------------------- */
+
+/* ---------------------- 2. Tablet Style Start ---------------------- */
+
+/* ---------------------- 2-1. Tablet Portrait Style Start ---------------------- */
+
+/* ---------------------- Tablet Portrait Style 600px ~ 1025px ---------------------- */
+
+@media screen and (min-width:600px) and (orientation:portrait) { }
+
+/* ---------------------- 2-1. Tablet Portrait Style End ---------------------- */
+
+/* ---------------------- 2-2. Tablet Landscape Style Start ---------------------- */
+
+/* ---------------------- Tablet Landscape Style 800px ~ 1280px ---------------------- */
+
+@media screen and (min-width:801px) and (orientation:landscape) { }
+
+/* ---------------------- 2-2. Tablet Landscape Style End ---------------------- */
+
+/* ---------------------- 2. Tablet Style End ---------------------- */
+
+/* ---------------------- 3. Desktop Style Start ---------------------- */
+
+/* ---------------------- Desktop Style 1280px ~ landscape ---------------------- */
+
+@media screen and (min-width:1281px) and (orientation:landscape) {
+  #page {
+    height:100%;
+    background-color:#2E3F51;
+  }
+  header {
+    border-bottom:12px solid white;
+  }
+
+
+  section.lecturewrapper {
+    position:relative;
+    top:5%;
+    left:4%;
+    height:60%;
+    width:92%;
+    background-color:white;
+  }
+
+  lecture_txt > .movebuttons {
+    visibility:hidden;
+    width:100%;
+  }
+  .leftbutton, .rightbutton {
+    position:absolute;
+    width:90px;
+    height:60%;
+    top:25%;
+    background-color:transparent;
+  }
+
+  .leftbutton {
+    left:90px;
+  }
+
+  .rightbutton {
+    right:90px;
+  }
+
+  .leftbutton > a > img, .rightbutton > a > img {
+    width:100px;
+    height:75%;
+  }
+
+  section.codingtip {
+    position:absolute;
+    height:20%;
+    width:100%;
+    top:80%;
+    background-color:white;
+  }
+
+  article.lecture_txt {
+    position:relative;
+    box-sizing:border-box;
+    float:left;
+    width:50%;
+    height:100%;
+    left:0px;
+    padding-left:30px;
+    padding-right:30px;
+    padding-top:30px;
+    padding-bottom:150px;
+    background-color:#2F3944;
+    overflow:auto;
+  }
+
+  .lecture_txtfile {
+    margin-top:3%;
+    font-family:'Noto Sans KR';
+    font-weight:100;
+    font-size:20px;
+    color:white;
+  }
+
+  .lecture_txtfile b {
+    font-weight:400;
+  }
+
+  article.lecture_img {
+    position:relative;
+    box-sizing:border-box;
+    float:left;
+    width:50%;
+    height:100%;
+    background-color:white;
+  }
+
+  .lecture_imgfile {
+    width: 100%;
+    height: 100%;
+  }
+
+  .lecture_imgfile > img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .triangle {
+    position:absolute;
+    width:0px;
+    height:0px;
+    right:30px;
+    bottom:30px;
+    border : 30px solid;
+    border-color:transparent #999999 #999999 transparent;
+  }
+
+  article > .lecture_title {
+    font-family:"Noto Sans KR", sans-serif;
+    font-weight:500;
+    font-size:36px;
+    color:white;
+  }
+
+  .profile {
+    position:absolute;
+    /*top:10%;*/
+    left:0;
+    right:0;
+    margin-left:auto;
+    margin-right:auto;
+    /*border:2px solid black;*/
+    width:500px;
+    height:80%;
+
+  }
+  .profile_nametag {
+    position:absolute;
+    top:10%;
+
+    /*width:400px;*/
+    height:50%;
+    left:0;
+    right:0;
+    width:250px;
+    margin-left:auto;
+    margin-right:auto;
+    /*border:2px solid skyblue;*/
+
+    overflow:hidden;
+  }
+  .profile_image {
+    position:relative;
+    float:left;
+    /*border:2px solid purple;*/
+  }
+
+  .profile_char {
+    position : relative;
+    left : 20px;
+    top : 10%;
+  }
+  .profile_username {
+    color:#666666;
+    font-family:"Nanumgothic";
+    font-size:30px;
+  }
+  .profile_userclass {
+    color:#999999;
+    font-family:"Nanumgothic";
+    font-size:20px;
+  }
+  .profile_image > img {
+    width:80px;
+    height:80px;
+    border-radius:100%;
+  }
+  .profile_expgauge {
+    position:absolute;
+    top:65%;
+    left:0;
+    right:0;
+    margin-left:auto;
+    margin-right:auto;
+    width:90%;
+    height:20%;
+    background-color:#EBEBEB;
+    /*border:2px solid deeppink;*/
+  }
+  .profile_expgauge_gaugebar {
+    position:absolute;
+    left:0;
+    /*changeable width value start*/
+    /*changeable width value end*/
+    height:100%;
+    background-color:#FF6F6F;
+    /*border:2px solid green;*/
+  }
+}
+
+
+/* ---------------------- 3. Desktop Style End ---------------------- */
+
+/* ---------------------- Responsive study Properties End ---------------------- */

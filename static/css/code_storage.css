@@ -1,0 +1,328 @@
+
+/*
+*
+* Name        : code_storage
+* File type   : CSS
+* Dependancy  : none
+* Library     : none
+* Purpose     : design code_storage page
+* Common      : Same Page styling
+* First Author: Geon-Ho Han
+* Contact     : Kakao_Talk: @풀스택개발자, hrg921, Email: hrg921@gmail.com
+* Last Fixer  : Geon-Ho Han
+* First-Date  : 10-03 2015
+* Last-Date   : 10-03 2015
+* Version     : v0.0.1
+*
+*/
+
+/* ---------------------- Basic code_Storage Configuration Start ---------------------- */
+
+/* ---------------------- Basic code_Storage Configuration End ---------------------- */
+
+/* ---------------------- Responsive code_Storage Properties Start ---------------------- */
+
+/* ---------------------- 1. Phone Style Start ---------------------- */
+
+/* ---------------------- 1-1. Phone Portrait Style Start ---------------------- */
+
+/* ---------------------- Phone Portrait Style 320px ~ 600px ---------------------- */
+
+@media screen and (min-width:320px) { }
+
+/* ---------------------- 1-1. Phone Portrait Style End ---------------------- */
+
+/* ---------------------- 1-2. Phone Landscape Style Start ---------------------- */
+
+/* ---------------------- Phone Landscape Style 480px ~ 800px ---------------------- */
+
+@media screen and (min-width:480px) and (orientation:landscape) { }
+
+/* ---------------------- 1-2. Phone Landscape Style End ---------------------- */
+
+/* ---------------------- 1. Phone Style End ---------------------- */
+
+/* ---------------------- 2. Tablet Style Start ---------------------- */
+
+/* ---------------------- 2-1. Tablet Portrait Style Start ---------------------- */
+
+/* ---------------------- Tablet Portrait Style 600px ~ 1025px ---------------------- */
+
+@media screen and (min-width:600px) and (orientation:portrait) { }
+
+/* ---------------------- 2-1. Tablet Portrait Style End ---------------------- */
+
+/* ---------------------- 2-2. Tablet Landscape Style Start ---------------------- */
+
+/* ---------------------- Tablet Landscape Style 800px ~ 1280px ---------------------- */
+
+@media screen and (min-width:801px) and (orientation:landscape) { }
+
+/* ---------------------- 2-2. Tablet Landscape Style End ---------------------- */
+
+/* ---------------------- 2. Tablet Style End ---------------------- */
+
+/* ---------------------- 3. Desktop Style Start ---------------------- */
+
+/* ---------------------- Desktop Style 1280px ~ landscape ---------------------- */
+
+@media screen and (min-width:1281px) and (orientation:landscape) {
+
+  #header_user_image {
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+    background-color: white;
+  }
+
+  #header_user_info {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  #header_user_name {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 20px;
+    font-weight: 100;
+    color: white;
+  }
+
+  #header_user_job {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    color: white;
+  }
+
+  article {
+    width: 100%;
+    height: 600px;
+    text-align: center;
+    margin-top: 3px;
+    background-image: url('../img/code_storage/image_desktop.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+
+  #article_title_kr {
+    height: 80px;
+    display: inline-block;
+    border-bottom: 1px solid white;
+    color: white;
+    margin-top: 150px;
+  }
+
+  #article_title_kr > h1 {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 60px;
+    font-weight: 100;
+  }
+
+  #article_title_eng > h2 {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 35px;
+    font-weight: 100;
+    margin-top: 10px;
+    color: white;
+  }
+
+  #search_keyword {
+    display: inline-block;
+    vertical-align: middle;
+    background: url('../img/code_storage/search_icon.svg') no-repeat white;
+    background-position: 7px 0px;
+    background-size: 40px;
+    font-family: 'NanumGothic', sans-serif;
+    font-size: 30px;
+    height: 40px;
+    padding: 0;
+    padding-left: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    border: 0;
+  }
+
+  #search_keyword:focus {
+    background: white;
+  }
+
+  #search_option {
+    display: inline-block;
+    vertical-align: middle;
+    background: url('../img/code_storage/downmark.svg') no-repeat white;
+    background-position: 138px;
+    width: 168px;
+    padding-left: 10px;
+    margin-left: 5px;
+    font-size: 20px;
+    font-family: 'NanumGothic', sans-serif;
+    line-height: 1;
+    border: 0;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    height: 40px;
+    -webkit-appearance: none;
+    appearance: none;
+  }
+
+  #search_button {
+    display :inline-block;
+    vertical-align: middle;
+    color: white;
+    background: #44596A;
+    height: 40px;
+    width: 100px;
+    border-radius: 10px;
+    margin-left: 5px;
+  }
+
+  #search_button > p {
+    line-height: 40px;
+    font-size: 20px;
+  }
+
+  section > .container > section {
+    width: 1240px;
+    margin: auto;
+  }
+
+  #section_column1 {
+    width: 30%;
+    margin-right: 4.5%;
+    margin-top: 30px;
+    display: inline-block;
+    float: left;
+  }
+
+  #section_column2 {
+    width: 30%;
+    margin-right: 4.5%;
+    margin-top: 30px;
+    display: inline-block;
+    float: left;
+  }
+
+  #section_column3 {
+    width: 30%;
+    margin-top: 30px;
+    display: inline-block;
+    float: left;
+  }
+
+  .code {
+    width: 100%;
+    height: 250px;
+    background: #CCCCCC;
+    margin-bottom: 30px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    border: 0;
+  }
+
+  .code_maker {
+    width: 100%;
+    height: 70px;
+  }
+
+  .code_maker > img {
+    background: white;
+    width: 50px;
+    height: 50px;
+    border: 0;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+    display: inline-block;
+    margin-left: 10px;
+    margin-top: 10px;
+    vertical-align: middle;
+    float: left;
+  }
+
+  .code_maker > .code_maker_info {
+    height: 70px;
+    display: inline;
+    vertical-align: middle;
+  }
+
+  .code_maker_info > h1 {
+    line-height: 70px;
+    margin-left: 75px;
+    color: #666666;
+  }
+
+  .code_title {
+    width: 100%;
+    height: 125px;
+    text-align: center;
+  }
+
+  .code_title > h1 {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .comment_and_recommend {
+    width: 100%;
+    height: 55px;
+  }
+
+  .comment {
+    width: 50%;
+    display: inline-block;
+    float: left;
+  }
+
+  .comment > img {
+    width: 35px;
+    float: left;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    display: inline-block;
+  }
+
+  .comment > p {
+    font-size: 30px;
+    margin-top: -15px;
+    font-family: 'Noto Sans KR', sans-serif;
+  }
+
+  .recommend {
+    width: 50%;
+    display: inline-block;
+    float: left;
+  }
+
+  .recommend > img {
+    width: 35px;
+    float: left;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    display: inline-block;
+  }
+
+  .recommend > p {
+    font-size: 30px;
+    margin-top: -15px;
+    font-family: 'Noto Sans KR', sans-serif;
+  }
+
+  #popup {
+    position: fixed;
+    z-index: 100;
+  }
+
+}
+
+/* ---------------------- 3. Desktop Style End ---------------------- */
+
+/* ---------------------- Responsive code_Storage Properties End ---------------------- */
